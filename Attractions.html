@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/ico.jpg">
+    <link rel="stylesheet" href="styles/About.css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Raleway&display=swap" rel="stylesheet">
+    <title>Australia About</title>
+<script>
+            $(function() {
+              $('#img').click(function(){
+            
+                $(this).toggleClass('min');
+                $(this).toggleClass('max');
+              });
+              });
+</script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+    <div class="top-bar">
+        <div class="flag">
+            <img src="images/flag.gif" alt="Australian flag">
+            <h1>Australia</h1>
+        </div>
+        <button class="btn-menu" id="btn-menu"><span class="hamburger-icon">&#9776;</span><span class="sr-only">Menu</span></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="cities.html">Cities</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="wildlife.html">Wildlife</a></li>
+            </ul>
+        </nav>
+    </div>
+<div class="banner">
+		<picture>
+			<source media="(max-width: 600px)" srcset="images/Attractions-mobile.jpg">
+			<img src="images/Attractions.jpg" alt="city picture">
+		</picture>
+		<h2>Attractions !</h2>
+	</div>		
+</header>
+
+<div class="page-content-wrap">
+<main>
+<section>
+    <div id="intro">
+    <p>
+    In Australia, you’ll find some of the most unique landscapes in the world. Tucked inside the dense wilderness and wide-open frontiers lie enticing natural phenomena formed over millions of years.
+    Here are the most incredible natural attractions around the country.
+    </p></div>
+<div class="hero-slider">
+    <div class="hero-slideshow cycle-slideshow" 
+        data-cycle-fx="scrollHorz"
+        data-cycle-timeout="0"
+        data-cycle-prev="#prev"
+        data-cycle-next="#next"
+        data-cycle-pager="#adv-custom-pager"
+        data-cycle-pager-template="<a href='#'><img src='{{src}}' alt='{{alt}}'></a>">
+		<img src="images/imageSrc.adapt.687.HIGH.jpg" alt="">
+		<img src="images/image.adapt.1663.medium.jpg" alt="">
+        <img src="imageS/imageSrc.adapt.6817.HIGH.jpg" alt="">
+        <img src="imageS/image.adapt.16623.medium.jpg" alt="">      <img src="imageS/image.adapt.16643.medium.jpg" alt=""> 
+    </div>
+    <!-- empty element for pager links -->
+    <div id="adv-custom-pager" class="hero-slider-th-container"></div>
+    <div class="hero-slider-controls-container">
+    <button id="prev" class="prev">
+        <span class="sr-only">Previous Slide</span>
+        <img src="images/arrow-left-white.png" alt="Left arrow">
+    </button>
+    <button id="next" class="next">
+        <span class="sr-only">Next Slide</span>
+        <img src="images/arrow-right-white.png" alt="Right arrow">
+    </button>
+    </div>
+    </div><!-- end hero-slider -->
+</section>
+<section class="cities intro">
+<div class="row">
+<article class="one_col">
+	<div class="one_city">
+			<img src="images/imageSrc.adapt.414.medium.jpg" alt="Great Barrier Reef">
+		<h4>Great Barrier Reef</h4>
+		<p>
+            The 2300-kilometre (1430-mile) Great Barrier Reef is the largest coral reef system in the world. You can swim, snorkel, dive and sail this living masterpiece.Home to diverse marine life of the most vivid colours, the Great Barrier Reef offers the opportunity for great adventure, whether you do it in luxury or on a budget.
+		</p>
+	</div>
+	<div class="one_city">
+			<img src="images/imageSrc.adapt.414.medium(1).jpg" alt="Red Centre">
+		<h4>Red Centre</h4>
+		<p>
+            The Red Centre is an extraordinary landscape of desert plains, weathered mountain ranges, rocky gorges and some of Aboriginal Australia's most sacred sites, including Uluru and Tjuta. Floating in an outback waterhole, dining under a starry sky while being serenaded by didgeridoo, and watching the world's most famous rock change colours at dawn and dusk are just some of the Red Centre's only-in-Australia experiences.
+		</p>		
+	</div>
+	<div class="one_city">
+			<img src="images/imageSrc.adapt.414.medium(2).jpg" alt="Great Ocean Road">
+			<h4>Great Ocean Road</h4>
+			<p>
+                Take a drive on the spectacular Great Ocean Road, which winds alongside the wild and windswept Southern Ocean. Home to the world-class surf at Bells Beach and the craggy limestone spires of the 12 Apostles, this diverse and dramatic region is best explored over the course of a few days.
+			</p>		
+		</div>
+		<div class="one_city">
+				<img src="images/image.adapt.1920.medium.jpg" alt="Kangaroo Island">
+				<h4>Kangaroo Island</h4>
+				<p>
+                    13 kilometres (8 miles) off the coast of South australia and 30 minutes by plane from , is brimming with native animals, some of which aren't found anywhere else. It is also home to an established artisanal food scene, and one of the world's best hotels. More than one third of the island is protected by conservation areas and national parks, while lush farmland and small towns make up much of the rest.
+				</p>		
+			</div>
+</article>
+</div>
+</section>
+</main>
+</div>
+<footer>
+	<h5>&copy; Page built by Ming Wang. 2019</h5>
+	<h5>Information and pictures taken from:</h5>
+	<p>
+		<a href="https://www.australia.com/en-ca">The official Australian tourism website</a><br>
+		<a href="https://en.wikipedia.org/wiki/Australia">Wikipedia</a>
+	</p>
+</footer>
+</div>
+<script src="scripts/menu.js"></script>
+<script src="scripts/jquery-3.4.1.min.js"></script>
+<script src="scripts/jquery.cycle2.min.js"></script>
+<script src="scripts/jquery-2.1.1.js"></script>
+</body>
+</html>
